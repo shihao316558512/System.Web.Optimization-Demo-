@@ -12,12 +12,12 @@ namespace WebApplication4
         // 有关捆绑的详细信息，请访问 https://go.microsoft.com/fwlink/?LinkID=303951
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/bootstrap.css",
-            //    "~/Content/font-awesome.css"));
+            bundles.Add(new StyleBundle("~/bundles/css").Include("~/Content/bootstrap.css",
+                "~/Content/font-awesome.css"));
 
-            //bundles.Add(new ScriptBundle("~/bundles/script").Include("~/Scripts/jquery-1.9.1.js",
-            //    "~/Scripts/bootstrap.js"));
-            //BundleTable.EnableOptimizations = true;
+            bundles.Add(new ScriptBundle("~/bundles/script").Include("~/Scripts/jquery-1.9.1.js",
+                "~/Scripts/bootstrap.js"));
+            BundleTable.EnableOptimizations = true;
             //bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
             //                "~/Scripts/WebForms/WebForms.js",
             //                "~/Scripts/WebForms/WebUIValidation.js",
